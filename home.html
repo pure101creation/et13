@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Et13 vibes - Buy Tickets for Your Favorite Events!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="spur.jpg" alt="Event Logo" class="spur.jpg">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section class="event-info">
+            <h1>Buy Tickets for Amazing Events!</h1>
+            <p>Join the fun! Buy your tickets for upcoming events like house parties, color splash, pool parties, hiking, road trips, and camping around Ruiru, Juja, Kimbo, Utawala, and Roysambu.</p>
+            <button class="buy-tickets-btn">Buy Tickets Now</button>
+        </section>
+
+        <section class="event-categories">
+            <h2>Upcoming Events</h2>
+            <div class="event-categories-list">
+                <div class="event-category">
+                    <h3>House Parties</h3>
+                    <p>Enjoy the best house parties in the region.</p>
+                    <button class="buy-tickets-btn">Buy Tickets</button>
+                </div>
+                <div class="event-category">
+                    <h3>Colour Splash</h3>
+                    <p>Get messy with colorful fun!</p>
+                    <button class="buy-tickets-btn">Buy Tickets</button>
+                </div>
+                <div class="event-category">
+                    <h3>Pool Parties</h3>
+                    <p>Chill by the pool and have a blast.</p>
+                    <button class="buy-tickets-btn">Buy Tickets</button>
+                </div>
+                <div class="event-category">
+                    <h3>Road Trips</h3>
+                    <p>Explore new places with our epic road trips.</p>
+                    <button class="buy-tickets-btn">Buy Tickets</button>
+                </div>
+                <div class="event-category">
+                    <h3>Hiking</h3>
+                    <p>Embark on scenic hiking adventures.</p>
+                    <button class="buy-tickets-btn">Buy Tickets</button>
+                </div>
+                <div class="event-category">
+                    <h3>Camping</h3>
+                    <p>Relax and enjoy the outdoors with camping.</p>
+                    <button class="buy-tickets-btn">Buy Tickets</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+<div id="countdown"></div>
+
+<script>
+    // Countdown timer for the next event
+    const countdown = document.getElementById('countdown');
+    const eventDate = new Date('2025-01-10T00:00:00'); // Set your event date
+
+    setInterval(function() {
+        const now = new Date();
+        const timeRemaining = eventDate - now;
+        
+        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }, 1000);
+</script>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Event Ticketing | All Rights Reserved</p>
+            <a href="contact.html" class="contact-us-link">Contact Us</a>
+        </div>
+    </footer>
+</body>
+</html>
+
