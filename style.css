@@ -92,7 +92,7 @@ main {
 /* Event Categories Section */
 .event-categories {
     margin-top: 50px;
-    background-color: #f0f8ff; /* Light blue background for the events section */
+    background-color: #0e2539; /* Light blue background for the events section */
     padding: 30px;
     border-radius: 10px;
 }
@@ -110,7 +110,7 @@ main {
 }
 
 .event-category {
-    background-color: white;
+    background-color: rgb(152, 34, 126);
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
@@ -139,7 +139,7 @@ main {
 /* Footer Section */
 footer {
     background-color: #2C3E50; /* Dark blue-gray background */
-    color: white;
+    color: rgb(202, 116, 116);
     padding: 20px;
     text-align: center;
     margin-top: 50px;
@@ -181,7 +181,7 @@ footer a:hover {
 }
 /* Sign-Up Form Section */
 .form-section {
-    background-color: #fff; /* White background for the form section */
+    background-color: #d84cd1; /* White background for the form section */
     padding: 40px;
     margin-top: 50px;
     border-radius: 10px;
